@@ -162,6 +162,34 @@ namespace LibraryManagementSystem
 
             return !IsNull(ds);
         }
+        //判断是否已被借出
+        public bool IsLoan(string id)
+        {
+            string sql = "select * from BookInfo where BookID ="+id+" and flag=1";
+
+            conn = sqlDao.getConn();
+            DataSet ds = new DataSet();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter adp = new SqlDataAdapter(sql, conn);
+                adp.Fill(ds);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return IsNull(ds);
+        }
     }
    
    
