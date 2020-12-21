@@ -240,6 +240,34 @@ namespace LibraryManagementSystem
                 groupBox_son.Show();
             }
         }
+
+        private void 借书ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (IS_LOGIN == 0)
+            {
+                MessageBox.Show("请您先登录！");
+            }
+            else
+            {
+                Form8 form8 = new Form8();
+                this.OpenFrom(form8);
+                groupBox_son.Show();
+            }
+        }
+
+        private void 热门书统计ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (IS_LOGIN == 0)
+            {
+                MessageBox.Show("请您先登录！");
+            }
+            else
+            {
+                Form9 form9 = new Form9();
+                this.OpenFrom(form9);
+                groupBox_son.Show();
+            }
+        }
     }
     }
 

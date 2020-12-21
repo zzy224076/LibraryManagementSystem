@@ -27,7 +27,7 @@ namespace LibraryManagementSystem
             {
                 if (dr == DialogResult.OK)
                 {
-                    if (radioButton_cert_id.Checked)
+                    if (sqlClass.IsNull(sqlClass.Query("select * from Loan where Cert_id="+id+"and flag=0")))
                     {
                         int i = sqlClass.NonQuery("delete from CertificateInfo where Cert_id =" + id + " and Name='" + name + "'");
                         if (i >= 1)
@@ -40,18 +40,13 @@ namespace LibraryManagementSystem
 
                         }
                     }
-                    else if (radioButton_xue_id.Checked)
+                    else
                     {
-                        int i = sqlClass.NonQuery("delete from CertificateInfo set where Cert_value ='" + id + "' and Name='" + name + "'");
-                        if (i >= 1)
-                        {
-                            MessageBox.Show("注销成功！！！");
-                        }
-                        else
-                        {
-                            MessageBox.Show("请检查信息是否正确！！！");
-                        }
+                        MessageBox.Show("该用户尚有图书未归还，无法注销！！！");
                     }
+                       
+                    
+                    
                 }
             }
             else

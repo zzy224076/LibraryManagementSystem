@@ -40,6 +40,8 @@ namespace LibraryManagementSystem
             this.textBox_name = new System.Windows.Forms.TextBox();
             this.textBox_dept = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox_type = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox_cert_ID
@@ -63,7 +65,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(404, 208);
+            this.label2.Location = new System.Drawing.Point(404, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
@@ -74,8 +76,8 @@ namespace LibraryManagementSystem
             this.comboBox_cert_name.FormattingEnabled = true;
             this.comboBox_cert_name.Items.AddRange(new object[] {
             "身份证号",
-            "学号"});
-            this.comboBox_cert_name.Location = new System.Drawing.Point(579, 205);
+            "学号/职工号"});
+            this.comboBox_cert_name.Location = new System.Drawing.Point(579, 243);
             this.comboBox_cert_name.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comboBox_cert_name.Name = "comboBox_cert_name";
             this.comboBox_cert_name.Size = new System.Drawing.Size(107, 23);
@@ -143,11 +145,35 @@ namespace LibraryManagementSystem
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(404, 177);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 20);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "证件类型";
+            // 
+            // comboBox_type
+            // 
+            this.comboBox_type.FormattingEnabled = true;
+            this.comboBox_type.Items.AddRange(new object[] {
+            "教师",
+            "学生"});
+            this.comboBox_type.Location = new System.Drawing.Point(579, 174);
+            this.comboBox_type.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.comboBox_type.Name = "comboBox_type";
+            this.comboBox_type.Size = new System.Drawing.Size(107, 23);
+            this.comboBox_type.TabIndex = 22;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 722);
+            this.Controls.Add(this.comboBox_type);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_dept);
             this.Controls.Add(this.textBox_name);
@@ -161,6 +187,7 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +206,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.TextBox textBox_dept;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox_type;
     }
 }

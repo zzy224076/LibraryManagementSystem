@@ -31,10 +31,11 @@ namespace LibraryManagementSystem
         {
             int cert_id = int.Parse(textBox_cert_ID.Text);
             string cert_name = comboBox_cert_name.Text;
+            string cert_type = comboBox_type.Text;
             string cert_value = textBox_cert_value.Text;
             string name = textBox_name.Text;
             string depart = textBox_dept.Text;
-            string sql = "insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,5)";
+            string sql = "insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,3,'学生')";
             SqlClass sqlClass = new SqlClass();
            
             
@@ -44,10 +45,21 @@ namespace LibraryManagementSystem
             }
             else
             {
+                
                 if (name!=""&& cert_name!="" && cert_value != "")
                 {
-                    sqlClass.NonQuery(sql);
-                    MessageBox.Show("办理成功！");
+                    if (cert_type == "教师")
+                    {
+                        sqlClass.NonQuery("insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,5,'教师')");
+                        MessageBox.Show("办理成功！");
+                    }
+                    else
+                    {
+                        MessageBox.Show(sql);
+                            sqlClass.NonQuery(sql);
+                            MessageBox.Show("办理成功！");
+                    }
+                    
                 }
                 else
                 {
@@ -55,6 +67,11 @@ namespace LibraryManagementSystem
                 }
             }
             
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
 
         }
     }
