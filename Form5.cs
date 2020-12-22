@@ -56,9 +56,9 @@ namespace LibraryManagementSystem
                     else
                     {
                         MessageBox.Show(sql);
-                            sqlClass.NonQuery(sql);
-                            MessageBox.Show("办理成功！");
-                    }
+                    sqlClass.NonQuery(sql);
+                    MessageBox.Show("办理成功！");
+                }
                     
                 }
                 else

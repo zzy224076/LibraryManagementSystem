@@ -24,7 +24,7 @@ namespace LibraryManagementSystem
 
         private void Query_Load(object sender, EventArgs e)
         {
-
+            groupBox1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,14 +32,35 @@ namespace LibraryManagementSystem
             string title = textBox_query_bookName.Text;
             SqlClass sqlClass = new SqlClass();
             DataSet ds = sqlClass.QueryByTitle(title);
-            dataGridView1.Rows.Clear();
+            groupBox1.Show();
             foreach (DataRow mDr in ds.Tables[0].Rows)
             {
-                dataGridView1.Rows.Add(mDr[0], mDr[1], mDr[2], mDr[3], mDr[4], mDr[5], mDr[6]);
+
+
+                label_book_name.Text = (string)mDr[1];
+                label_author.Text = mDr[3]+"";
+                label_publish.Text = mDr[2]+"";
+                label_words.Text = mDr[4]+"";
+                label_number.Text = mDr[5]+"";
+                label_price.Text = mDr[6]+"";
+                textBox_jianjie.Text =mDr[8]+"";
+                
+                pictureBox_book_pic.ImageLocation =mDr[9]+"";
+                pictureBox_book_pic.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label_words_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox_book_pic_Click(object sender, EventArgs e)
         {
 
         }
