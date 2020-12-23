@@ -40,9 +40,8 @@ namespace LibraryManagementSystem
             string price = textBox_price.Text;
             SqlClass sqlClass = new SqlClass();
             if (sqlClass.IsNull(sqlClass.QueryById(bookId))){
-                string sql = "insert into BookInfo  values('" + bookId + "','" + title + "','" + publish + "','"+author+"',"+words+","+number+",'"+price+"',0)";
+                string sql = "insert into BookInfo  values('" + bookId + "','" + title + "','" + publish + "','"+author+"',"+words+","+number+",'"+price+"',0,'','')";
                 sqlClass.NonQuery(sql);
-                
                 MessageBox.Show("插入成功！");
             }
             else

@@ -268,6 +268,20 @@ namespace LibraryManagementSystem
                 groupBox_son.Show();
             }
         }
+
+        private void 阅读摘要ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (IS_LOGIN == 0)
+            {
+                MessageBox.Show("请您先登录！");
+            }
+            else
+            {
+                Form10 form10 = new Form10();
+                this.OpenFrom(form10);
+                groupBox_son.Show();
+            }
+        }
     }
     }
 
