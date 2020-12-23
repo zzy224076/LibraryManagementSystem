@@ -138,6 +138,7 @@ namespace LibraryManagementSystem
             this.numericUpDown_Number.Name = "numericUpDown_Number";
             this.numericUpDown_Number.Size = new System.Drawing.Size(120, 25);
             this.numericUpDown_Number.TabIndex = 39;
+            this.numericUpDown_Number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown_words
             // 

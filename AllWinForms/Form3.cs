@@ -15,11 +15,12 @@ namespace LibraryManagementSystem
         public Form_addBooks()
         {
             InitializeComponent();
+           
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label5_Click(object sender, EventArgs e)

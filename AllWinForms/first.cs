@@ -18,6 +18,7 @@ namespace LibraryManagementSystem
         public Form1()
         {
             InitializeComponent();
+            skinEngine1.SkinFile = System.Environment.CurrentDirectory + "\\Skins\\Calmness.ssk";
         }
         private void OpenFrom(Form objFrm)
         {

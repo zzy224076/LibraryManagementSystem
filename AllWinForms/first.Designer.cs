@@ -63,6 +63,7 @@ namespace LibraryManagementSystem
             this.阅读摘要ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新书浏览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -370,14 +371,14 @@ namespace LibraryManagementSystem
             // 阅读摘要ToolStripMenuItem
             // 
             this.阅读摘要ToolStripMenuItem.Name = "阅读摘要ToolStripMenuItem";
-            this.阅读摘要ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.阅读摘要ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.阅读摘要ToolStripMenuItem.Text = "阅读摘要";
             this.阅读摘要ToolStripMenuItem.Click += new System.EventHandler(this.阅读摘要ToolStripMenuItem_Click);
             // 
             // 新书浏览ToolStripMenuItem
             // 
             this.新书浏览ToolStripMenuItem.Name = "新书浏览ToolStripMenuItem";
-            this.新书浏览ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.新书浏览ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.新书浏览ToolStripMenuItem.Text = "新书浏览";
             // 
             // 帮助ToolStripMenuItem
@@ -385,6 +386,15 @@ namespace LibraryManagementSystem
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.帮助ToolStripMenuItem.Text = "帮助";
+            // 
+            // skinEngine1
+            // 
+            this.skinEngine1.@__DrawButtonFocusRectangle = true;
+            this.skinEngine1.DisabledButtonTextColor = System.Drawing.Color.Gray;
+            this.skinEngine1.DisabledMenuFontColor = System.Drawing.SystemColors.GrayText;
+            this.skinEngine1.InactiveCaptionColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.skinEngine1.SerialNumber = "";
+            this.skinEngine1.SkinFile = null;
             // 
             // Form1
             // 
@@ -450,6 +460,7 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 图书浏览ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 阅读摘要ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 新书浏览ToolStripMenuItem;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }
 
