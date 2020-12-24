@@ -31,21 +31,14 @@ namespace LibraryManagementSystem
         {
             this.label1 = new System.Windows.Forms.Label();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.label_username = new System.Windows.Forms.Label();
-            this.panel_login = new System.Windows.Forms.Panel();
-            this.button_login = new System.Windows.Forms.Button();
-            this.textBox_password = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox_username = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox_son = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.系统设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.下架图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.录入图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +50,7 @@ namespace LibraryManagementSystem
             this.注销借阅证ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.借阅管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.借书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.还书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.热门书统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书浏览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +61,7 @@ namespace LibraryManagementSystem
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
-            this.panel_login.SuspendLayout();
+            this.groupBox_son.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,17 +81,15 @@ namespace LibraryManagementSystem
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.label_username);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.panel_login);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label2);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.groupBox_son);
             this.toolStripContainer1.ContentPanel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(982, 625);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1728, 650);
             this.toolStripContainer1.ContentPanel.Load += new System.EventHandler(this.toolStripContainer1_ContentPanel_Load);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(982, 653);
+            this.toolStripContainer1.Size = new System.Drawing.Size(1728, 678);
             this.toolStripContainer1.TabIndex = 4;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -105,89 +97,6 @@ namespace LibraryManagementSystem
             // 
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
             this.toolStripContainer1.TopToolStripPanel.Click += new System.EventHandler(this.toolStripContainer1_TopToolStripPanel_Click);
-            // 
-            // label_username
-            // 
-            this.label_username.AutoSize = true;
-            this.label_username.Location = new System.Drawing.Point(818, 14);
-            this.label_username.Name = "label_username";
-            this.label_username.Size = new System.Drawing.Size(119, 15);
-            this.label_username.TabIndex = 3;
-            this.label_username.Text = "label_username";
-            this.label_username.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // panel_login
-            // 
-            this.panel_login.Controls.Add(this.button_login);
-            this.panel_login.Controls.Add(this.textBox_password);
-            this.panel_login.Controls.Add(this.label5);
-            this.panel_login.Controls.Add(this.textBox_username);
-            this.panel_login.Controls.Add(this.label4);
-            this.panel_login.Controls.Add(this.label3);
-            this.panel_login.Location = new System.Drawing.Point(100, 56);
-            this.panel_login.Name = "panel_login";
-            this.panel_login.Size = new System.Drawing.Size(786, 464);
-            this.panel_login.TabIndex = 1;
-            this.panel_login.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button_login
-            // 
-            this.button_login.Location = new System.Drawing.Point(293, 324);
-            this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(168, 60);
-            this.button_login.TabIndex = 5;
-            this.button_login.Text = "登录";
-            this.button_login.UseVisualStyleBackColor = true;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
-            // 
-            // textBox_password
-            // 
-            this.textBox_password.AcceptsTab = true;
-            this.textBox_password.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.textBox_password.Location = new System.Drawing.Point(334, 220);
-            this.textBox_password.Name = "textBox_password";
-            this.textBox_password.Size = new System.Drawing.Size(192, 25);
-            this.textBox_password.TabIndex = 4;
-            this.textBox_password.UseSystemPasswordChar = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(181, 221);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 24);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "密码";
-            // 
-            // textBox_username
-            // 
-            this.textBox_username.AcceptsTab = true;
-            this.textBox_username.Location = new System.Drawing.Point(334, 148);
-            this.textBox_username.Name = "textBox_username";
-            this.textBox_username.Size = new System.Drawing.Size(192, 25);
-            this.textBox_username.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(181, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 24);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "用户名";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(286, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 40);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "管理员登录";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -199,13 +108,24 @@ namespace LibraryManagementSystem
             // 
             // groupBox_son
             // 
-            this.groupBox_son.Location = new System.Drawing.Point(0, 42);
+            this.groupBox_son.Controls.Add(this.label3);
+            this.groupBox_son.Location = new System.Drawing.Point(0, 3);
             this.groupBox_son.Name = "groupBox_son";
-            this.groupBox_son.Size = new System.Drawing.Size(976, 580);
+            this.groupBox_son.Size = new System.Drawing.Size(1725, 753);
             this.groupBox_son.TabIndex = 4;
             this.groupBox_son.TabStop = false;
-            this.groupBox_son.Text = "groupBox1";
+            this.groupBox_son.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox_son_Paint);
             this.groupBox_son.Enter += new System.EventHandler(this.groupBox_son_Enter);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("隶书", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(613, 255);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(644, 48);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "欢迎您使用图书馆管理系统！";
             // 
             // menuStrip1
             // 
@@ -221,7 +141,7 @@ namespace LibraryManagementSystem
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1728, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -229,14 +149,21 @@ namespace LibraryManagementSystem
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.系统设置ToolStripMenuItem,
             this.新增图书ToolStripMenuItem,
             this.下架图书ToolStripMenuItem,
-            this.注销ToolStripMenuItem,
             this.退出系统ToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
             this.toolStripMenuItem1.Text = "系统管理";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // 系统设置ToolStripMenuItem
+            // 
+            this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
+            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.系统设置ToolStripMenuItem.Text = "参数设置";
+            this.系统设置ToolStripMenuItem.Click += new System.EventHandler(this.系统设置ToolStripMenuItem_Click);
             // 
             // 新增图书ToolStripMenuItem
             // 
@@ -250,13 +177,6 @@ namespace LibraryManagementSystem
             this.下架图书ToolStripMenuItem.Name = "下架图书ToolStripMenuItem";
             this.下架图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.下架图书ToolStripMenuItem.Text = "用户管理";
-            // 
-            // 注销ToolStripMenuItem
-            // 
-            this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
-            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.注销ToolStripMenuItem.Text = "注销";
-            this.注销ToolStripMenuItem.Click += new System.EventHandler(this.注销ToolStripMenuItem_Click);
             // 
             // 退出系统ToolStripMenuItem
             // 
@@ -332,7 +252,8 @@ namespace LibraryManagementSystem
             // 借阅管理ToolStripMenuItem
             // 
             this.借阅管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.借书ToolStripMenuItem});
+            this.借书ToolStripMenuItem,
+            this.还书ToolStripMenuItem});
             this.借阅管理ToolStripMenuItem.Name = "借阅管理ToolStripMenuItem";
             this.借阅管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.借阅管理ToolStripMenuItem.Text = "图书租借";
@@ -340,9 +261,16 @@ namespace LibraryManagementSystem
             // 借书ToolStripMenuItem
             // 
             this.借书ToolStripMenuItem.Name = "借书ToolStripMenuItem";
-            this.借书ToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
-            this.借书ToolStripMenuItem.Text = "借书/还书";
+            this.借书ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.借书ToolStripMenuItem.Text = "借书";
             this.借书ToolStripMenuItem.Click += new System.EventHandler(this.借书ToolStripMenuItem_Click);
+            // 
+            // 还书ToolStripMenuItem
+            // 
+            this.还书ToolStripMenuItem.Name = "还书ToolStripMenuItem";
+            this.还书ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.还书ToolStripMenuItem.Text = "还书";
+            this.还书ToolStripMenuItem.Click += new System.EventHandler(this.还书ToolStripMenuItem_Click);
             // 
             // 信息管理ToolStripMenuItem
             // 
@@ -351,6 +279,7 @@ namespace LibraryManagementSystem
             this.信息管理ToolStripMenuItem.Name = "信息管理ToolStripMenuItem";
             this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.信息管理ToolStripMenuItem.Text = "信息管理";
+            
             // 
             // 热门书统计ToolStripMenuItem
             // 
@@ -400,7 +329,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 43F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(1728, 678);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("隶书", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -415,8 +344,8 @@ namespace LibraryManagementSystem
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
-            this.panel_login.ResumeLayout(false);
-            this.panel_login.PerformLayout();
+            this.groupBox_son.ResumeLayout(false);
+            this.groupBox_son.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -444,15 +373,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 办理借阅证ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 挂失借阅证ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 注销借阅证ToolStripMenuItem;
-        private System.Windows.Forms.Panel panel_login;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox_password;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox_username;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button_login;
-        private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
-        private System.Windows.Forms.Label label_username;
         private System.Windows.Forms.GroupBox groupBox_son;
         private System.Windows.Forms.ToolStripMenuItem 查询图书ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 借书ToolStripMenuItem;
@@ -461,6 +381,9 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 阅读摘要ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 新书浏览ToolStripMenuItem;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
+        private System.Windows.Forms.ToolStripMenuItem 系统设置ToolStripMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem 还书ToolStripMenuItem;
     }
 }
 

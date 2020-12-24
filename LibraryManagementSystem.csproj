@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllWinForms\return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWinForms\return.Designer.cs">
+      <DependentUpon>return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllWinForms\settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllWinForms\settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -160,6 +172,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllWinForms\Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWinForms\return.resx">
+      <DependentUpon>return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllWinForms\settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

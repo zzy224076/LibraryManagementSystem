@@ -40,15 +40,23 @@ namespace LibraryManagementSystem
             int number = (int)numericUpDown_Number.Value;
             string price = textBox_price.Text;
             SqlClass sqlClass = new SqlClass();
-            if (sqlClass.IsNull(sqlClass.QueryById(bookId))){
-                string sql = "insert into BookInfo  values('" + bookId + "','" + title + "','" + publish + "','"+author+"',"+words+","+number+",'"+price+"',0,'','')";
-                sqlClass.NonQuery(sql);
-                MessageBox.Show("插入成功！");
-            }
-            else
+            for (int i = 0; i< number; i++)
             {
-                MessageBox.Show("id已存在，请重新输入！");
+                if (sqlClass.IsNull(sqlClass.QueryById(bookId+i))){
+                    
+                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+","+number+",'"+price+"',0,'','')";
+                    sqlClass.NonQuery(sql);
+                    MessageBox.Show("插入成功！");
+                    
+                }
+                else
+                {
+                    MessageBox.Show("id已存在，请重新输入！");
+                    break;
+                }
             }
+                
+           
             
             
         }

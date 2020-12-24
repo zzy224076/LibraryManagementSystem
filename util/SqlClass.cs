@@ -227,9 +227,9 @@ namespace LibraryManagementSystem
         }
         //借阅次数加1
        
-        public int timesjia(string certId)
+        public int timesjia(string bookId)
         {
-            string sql = "UPDATE CertificateInfo set times = times+1 where Cert_ID=" + certId;
+            string sql = "UPDATE CertificateInfo set times =times+1  WHERE Cert_id IN ( SELECT c.Cert_id from CertificateInfo c,Loan L WHERE L.BookID="+bookId+" AND L.Cert_id=c.Cert_id)";
             conn = sqlDao.getConn();
             int a = -1;
             try
@@ -280,33 +280,8 @@ namespace LibraryManagementSystem
 
             return a;
         }
-        //库存加1
-        public int kucunjia(string bookID)
-        {
-            string sql = "UPDATE BookInfo set Number = Number+1 WHERE BookID=" + bookID;
-            conn = sqlDao.getConn();
-            int a = -1;
-            try
-            {
-                conn.Open(); //打开数据库
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                a = cmd.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();//关闭数据库                    
-                }
-            }
-
-            return a;
-        }
+       
+        //
         //插入借书表中
         public int ExecuteLoan(string cert_id,string book_id)
         {
@@ -338,10 +313,10 @@ namespace LibraryManagementSystem
             return a;
         }
         //执行还书操作
-        public int ExecuteReturn(string cert_id, string book_id)
+        public int ExecuteReturn(string book_id)
         {
             string time = System.DateTime.Now.ToString("G");
-            string sql = "UPDATE Loan set [Return]='" + time + "',flag=1 where BookID=" + book_id + " and Cert_id=" + cert_id + " and flag=0";
+            string sql = "UPDATE Loan set [Return]='" + time + "',flag=1 where BookID=" + book_id + " and flag=0";
             
             conn = sqlDao.getConn();
             int a = -1;
