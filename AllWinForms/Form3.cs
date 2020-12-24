@@ -44,7 +44,7 @@ namespace LibraryManagementSystem
             {
                 if (sqlClass.IsNull(sqlClass.QueryById(bookId+i))){
                     
-                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+","+number+",'"+price+"',0,'','')";
+                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'','')";
                     sqlClass.NonQuery(sql);
                     MessageBox.Show("插入成功！");
                     

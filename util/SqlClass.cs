@@ -90,6 +90,33 @@ namespace LibraryManagementSystem
 
             return ds;
         }
+        //通用查询
+        public DataSet QueryLoanDays(String bookId)
+        {
+            string sql = " select DATEDIFF(DAY,Loandates,[Return]) from Loan WHERE BookID="+bookId;
+            conn = sqlDao.getConn();
+            DataSet ds = new DataSet();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter adp = new SqlDataAdapter(sql, conn);
+                adp.Fill(ds);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return ds;
+        }
         //管理员登录
         public bool Login(string username,string password)
         {
@@ -198,65 +225,12 @@ namespace LibraryManagementSystem
 
             return IsNull(ds);
         }
-        //借阅次数减一
-        public int timesjian(string certId)
-        {
-            string sql = "UPDATE CertificateInfo set times = times-1 where Cert_ID=" + certId;
-            conn = sqlDao.getConn();
-            int a = -1;
-            try
-            {
-                conn.Open(); //打开数据库
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                a = cmd.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();//关闭数据库                    
-                }
-            }
-
-            return a;
-        }
-        //借阅次数加1
+        
        
-        public int timesjia(string bookId)
+        //借阅次数加一
+        public int timejia(string bookID)
         {
-            string sql = "UPDATE CertificateInfo set times =times+1  WHERE Cert_id IN ( SELECT c.Cert_id from CertificateInfo c,Loan L WHERE L.BookID="+bookId+" AND L.Cert_id=c.Cert_id)";
-            conn = sqlDao.getConn();
-            int a = -1;
-            try
-            {
-                conn.Open(); //打开数据库
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                a = cmd.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();//关闭数据库                    
-                }
-            }
-
-            return a;
-        }
-        //库存减一被借阅次数加一
-        public int kucunjian(string bookID)
-        {
-            string sql = "UPDATE BookInfo set Number = Number-1,Loantimes =Loantimes+1 WHERE BookID="+bookID;
+            string sql = "UPDATE BookInfo set Loantimes =Loantimes+1 WHERE BookID="+bookID;
             conn = sqlDao.getConn();
             int a = -1;
             try
@@ -372,6 +346,33 @@ namespace LibraryManagementSystem
         public bool IsRepeatLoan(string certId,string bookId)
         {
             string sql = "select * from loan where BookID="+bookId+" and Cert_id="+certId+" and flag=0";
+            conn = sqlDao.getConn();
+            DataSet ds = new DataSet();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter adp = new SqlDataAdapter(sql, conn);
+                adp.Fill(ds);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
+            return !IsNull(ds);
+        }
+        //判断借阅卡类型是否为学生卡,是返回true 
+        public bool IsStuCert(string Cert_id)
+        {
+            string sql = "select * from CertificateInfo where type = '学生' and Cert_id="+Cert_id;
             conn = sqlDao.getConn();
             DataSet ds = new DataSet();
             try

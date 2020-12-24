@@ -226,24 +226,7 @@ namespace LibraryManagementSystem
             groupBox_son.Show();
         }
 
-        private void groupBox_son_Paint(object sender, PaintEventArgs e)
-        {
-
-            ControlPaint.DrawBorder(e.Graphics,this.groupBox_son.ClientRectangle,
-                                        Color.Black,
-                                        1,
-                                        ButtonBorderStyle.Solid,
-                                        Color.Black,
-                                        1,
-                                        ButtonBorderStyle.Solid,
-                                        Color.Black,
-                                        1,
-                                        ButtonBorderStyle.Solid,
-                                        Color.Black,
-                                        1,
-                                        ButtonBorderStyle.Solid);
-            
-        }
+        
 
        
     }

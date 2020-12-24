@@ -21,7 +21,7 @@ namespace LibraryManagementSystem.AllWinForms
         {
             string bookId = textBox_book_id.Text;
             SqlClass sqlClass = new SqlClass();
-            sqlClass.timesjia(bookId);
+            
             sqlClass.ExecuteReturn( bookId);
             MessageBox.Show("归还成功！！！");
         }

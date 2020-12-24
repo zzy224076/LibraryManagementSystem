@@ -30,23 +30,21 @@ namespace LibraryManagementSystem
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox_jianjie = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label_price = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label_author = new System.Windows.Forms.Label();
             this.label_publish = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label_words = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_book_name = new System.Windows.Forms.Label();
             this.pictureBox_book_pic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_query_bookName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label_number = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label_price = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox_jianjie = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book_pic)).BeginInit();
             this.SuspendLayout();
@@ -58,28 +56,67 @@ namespace LibraryManagementSystem
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label_price);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label_number);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label_author);
             this.groupBox1.Controls.Add(this.label_publish);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label_words);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label_book_name);
             this.groupBox1.Controls.Add(this.pictureBox_book_pic);
-            this.groupBox1.Location = new System.Drawing.Point(259, 107);
+            this.groupBox1.Location = new System.Drawing.Point(493, 103);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(833, 617);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // textBox_jianjie
+            // 
+            this.textBox_jianjie.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox_jianjie.Location = new System.Drawing.Point(296, 429);
+            this.textBox_jianjie.Multiline = true;
+            this.textBox_jianjie.Name = "textBox_jianjie";
+            this.textBox_jianjie.Size = new System.Drawing.Size(531, 182);
+            this.textBox_jianjie.TabIndex = 14;
+            this.textBox_jianjie.Text = "简介";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(291, 384);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(152, 28);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "内容简介：";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label_price
+            // 
+            this.label_price.AutoSize = true;
+            this.label_price.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_price.Location = new System.Drawing.Point(477, 307);
+            this.label_price.Name = "label_price";
+            this.label_price.Size = new System.Drawing.Size(82, 28);
+            this.label_price.TabIndex = 11;
+            this.label_price.Text = "price";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(291, 307);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 28);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "价格：";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(291, 169);
+            this.label8.Location = new System.Drawing.Point(291, 194);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(152, 28);
             this.label8.TabIndex = 8;
@@ -89,7 +126,7 @@ namespace LibraryManagementSystem
             // 
             this.label_author.AutoSize = true;
             this.label_author.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_author.Location = new System.Drawing.Point(477, 97);
+            this.label_author.Location = new System.Drawing.Point(477, 128);
             this.label_author.Name = "label_author";
             this.label_author.Size = new System.Drawing.Size(96, 28);
             this.label_author.TabIndex = 7;
@@ -99,7 +136,7 @@ namespace LibraryManagementSystem
             // 
             this.label_publish.AutoSize = true;
             this.label_publish.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_publish.Location = new System.Drawing.Point(477, 169);
+            this.label_publish.Location = new System.Drawing.Point(477, 194);
             this.label_publish.Name = "label_publish";
             this.label_publish.Size = new System.Drawing.Size(110, 28);
             this.label_publish.TabIndex = 6;
@@ -109,7 +146,7 @@ namespace LibraryManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(291, 231);
+            this.label5.Location = new System.Drawing.Point(291, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 28);
             this.label5.TabIndex = 5;
@@ -119,28 +156,18 @@ namespace LibraryManagementSystem
             // 
             this.label_words.AutoSize = true;
             this.label_words.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_words.Location = new System.Drawing.Point(477, 231);
+            this.label_words.Location = new System.Drawing.Point(477, 252);
             this.label_words.Name = "label_words";
             this.label_words.Size = new System.Drawing.Size(82, 28);
             this.label_words.TabIndex = 4;
             this.label_words.Text = "words";
             this.label_words.Click += new System.EventHandler(this.label_words_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(291, 291);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 28);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "库存:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(291, 97);
+            this.label2.Location = new System.Drawing.Point(291, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 28);
             this.label2.TabIndex = 2;
@@ -169,7 +196,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(254, 61);
+            this.label1.Location = new System.Drawing.Point(488, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 28);
             this.label1.TabIndex = 1;
@@ -177,14 +204,14 @@ namespace LibraryManagementSystem
             // 
             // textBox_query_bookName
             // 
-            this.textBox_query_bookName.Location = new System.Drawing.Point(550, 64);
+            this.textBox_query_bookName.Location = new System.Drawing.Point(784, 60);
             this.textBox_query_bookName.Name = "textBox_query_bookName";
             this.textBox_query_bookName.Size = new System.Drawing.Size(208, 25);
             this.textBox_query_bookName.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(884, 55);
+            this.button1.Location = new System.Drawing.Point(1118, 51);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 34);
             this.button1.TabIndex = 3;
@@ -192,62 +219,11 @@ namespace LibraryManagementSystem
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label_number
-            // 
-            this.label_number.AutoSize = true;
-            this.label_number.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_number.Location = new System.Drawing.Point(477, 291);
-            this.label_number.Name = "label_number";
-            this.label_number.Size = new System.Drawing.Size(96, 28);
-            this.label_number.TabIndex = 9;
-            this.label_number.Text = "number";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(291, 340);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 28);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "价格：";
-            // 
-            // label_price
-            // 
-            this.label_price.AutoSize = true;
-            this.label_price.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_price.Location = new System.Drawing.Point(477, 340);
-            this.label_price.Name = "label_price";
-            this.label_price.Size = new System.Drawing.Size(82, 28);
-            this.label_price.TabIndex = 11;
-            this.label_price.Text = "price";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(291, 384);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 28);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "内容简介：";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // textBox_jianjie
-            // 
-            this.textBox_jianjie.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox_jianjie.Location = new System.Drawing.Point(296, 429);
-            this.textBox_jianjie.Multiline = true;
-            this.textBox_jianjie.Name = "textBox_jianjie";
-            this.textBox_jianjie.Size = new System.Drawing.Size(531, 182);
-            this.textBox_jianjie.TabIndex = 14;
-            this.textBox_jianjie.Text = "简介";
-            // 
             // Query
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1425, 762);
+            this.ClientSize = new System.Drawing.Size(1724, 706);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_query_bookName);
             this.Controls.Add(this.label1);
@@ -277,8 +253,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Label label_publish;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label_words;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label_number;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.Label label6;

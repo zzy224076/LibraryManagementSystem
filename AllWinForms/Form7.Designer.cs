@@ -38,7 +38,7 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(521, 432);
+            this.button2.Location = new System.Drawing.Point(786, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 46);
             this.button2.TabIndex = 13;
@@ -48,7 +48,7 @@ namespace LibraryManagementSystem
             // 
             // textBox2_name
             // 
-            this.textBox2_name.Location = new System.Drawing.Point(586, 305);
+            this.textBox2_name.Location = new System.Drawing.Point(851, 294);
             this.textBox2_name.Name = "textBox2_name";
             this.textBox2_name.Size = new System.Drawing.Size(131, 25);
             this.textBox2_name.TabIndex = 12;
@@ -57,7 +57,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(496, 310);
+            this.label2.Location = new System.Drawing.Point(761, 299);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 11;
@@ -67,7 +67,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(496, 237);
+            this.label1.Location = new System.Drawing.Point(761, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 10;
@@ -75,7 +75,7 @@ namespace LibraryManagementSystem
             // 
             // textBox_guaID
             // 
-            this.textBox_guaID.Location = new System.Drawing.Point(586, 232);
+            this.textBox_guaID.Location = new System.Drawing.Point(851, 221);
             this.textBox_guaID.Name = "textBox_guaID";
             this.textBox_guaID.Size = new System.Drawing.Size(131, 25);
             this.textBox_guaID.TabIndex = 8;
@@ -84,7 +84,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 744);
+            this.ClientSize = new System.Drawing.Size(1740, 746);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2_name);
             this.Controls.Add(this.label2);

@@ -41,17 +41,13 @@ namespace LibraryManagementSystem
                 groupBox1.Show();
                 foreach (DataRow mDr in ds.Tables[0].Rows)
                 {
-
-
                     label_book_name.Text = (string)mDr[1];
                     label_author.Text = mDr[3] + "";
                     label_publish.Text = mDr[2] + "";
                     label_words.Text = mDr[4] + "";
-                    label_number.Text = mDr[5] + "";
-                    label_price.Text = mDr[6] + "";
-                    textBox_jianjie.Text = mDr[8] + "";
-
-                    pictureBox_book_pic.ImageLocation = mDr[9] + "";
+                    label_price.Text = mDr[5] + "";
+                    textBox_jianjie.Text = mDr[7] + "";
+                    pictureBox_book_pic.ImageLocation = mDr[8] + "";
                     pictureBox_book_pic.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }

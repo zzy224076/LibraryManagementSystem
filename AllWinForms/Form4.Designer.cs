@@ -38,7 +38,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(361, 231);
+            this.label1.Location = new System.Drawing.Point(803, 252);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 24);
             this.label1.TabIndex = 0;
@@ -46,14 +46,14 @@ namespace LibraryManagementSystem
             // 
             // textBox_xiajia
             // 
-            this.textBox_xiajia.Location = new System.Drawing.Point(573, 229);
+            this.textBox_xiajia.Location = new System.Drawing.Point(1015, 250);
             this.textBox_xiajia.Name = "textBox_xiajia";
             this.textBox_xiajia.Size = new System.Drawing.Size(173, 25);
             this.textBox_xiajia.TabIndex = 1;
             // 
             // button_xiajia
             // 
-            this.button_xiajia.Location = new System.Drawing.Point(457, 323);
+            this.button_xiajia.Location = new System.Drawing.Point(922, 480);
             this.button_xiajia.Name = "button_xiajia";
             this.button_xiajia.Size = new System.Drawing.Size(139, 72);
             this.button_xiajia.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 680);
+            this.ClientSize = new System.Drawing.Size(1724, 706);
             this.Controls.Add(this.button_xiajia);
             this.Controls.Add(this.textBox_xiajia);
             this.Controls.Add(this.label1);
