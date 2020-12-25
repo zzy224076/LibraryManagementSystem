@@ -39,14 +39,17 @@ namespace LibraryManagementSystem
             
             int number = (int)numericUpDown_Number.Value;
             string price = textBox_price.Text;
+            string url = textBox_picUrl.Text;
+            string readingSummary = textBox_readingSummary.Text;
             SqlClass sqlClass = new SqlClass();
             for (int i = 0; i< number; i++)
             {
                 if (sqlClass.IsNull(sqlClass.QueryById(bookId+i))){
                     
-                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'','')";
+                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'"+readingSummary+"','"+url+"')";
+                    
                     sqlClass.NonQuery(sql);
-                    MessageBox.Show("插入成功！");
+                    
                     
                 }
                 else
@@ -54,6 +57,7 @@ namespace LibraryManagementSystem
                     MessageBox.Show("id已存在，请重新输入！");
                     break;
                 }
+                MessageBox.Show("插入成功！");
             }
                 
            

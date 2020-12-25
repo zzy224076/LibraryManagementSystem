@@ -46,7 +46,7 @@ namespace LibraryManagementSystem
             // 
             // textBox_cert_ID
             // 
-            this.textBox_cert_ID.Location = new System.Drawing.Point(971, 159);
+            this.textBox_cert_ID.Location = new System.Drawing.Point(881, 161);
             this.textBox_cert_ID.Name = "textBox_cert_ID";
             this.textBox_cert_ID.Size = new System.Drawing.Size(100, 25);
             this.textBox_cert_ID.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(796, 159);
+            this.label1.Location = new System.Drawing.Point(706, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(796, 285);
+            this.label2.Location = new System.Drawing.Point(706, 287);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace LibraryManagementSystem
             this.comboBox_cert_name.Items.AddRange(new object[] {
             "身份证号",
             "学号/职工号"});
-            this.comboBox_cert_name.Location = new System.Drawing.Point(971, 282);
+            this.comboBox_cert_name.Location = new System.Drawing.Point(881, 284);
             this.comboBox_cert_name.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comboBox_cert_name.Name = "comboBox_cert_name";
             this.comboBox_cert_name.Size = new System.Drawing.Size(107, 23);
@@ -87,7 +87,7 @@ namespace LibraryManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(796, 341);
+            this.label4.Location = new System.Drawing.Point(706, 343);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 20);
             this.label4.TabIndex = 12;
@@ -95,7 +95,7 @@ namespace LibraryManagementSystem
             // 
             // textBox_cert_value
             // 
-            this.textBox_cert_value.Location = new System.Drawing.Point(971, 336);
+            this.textBox_cert_value.Location = new System.Drawing.Point(881, 338);
             this.textBox_cert_value.Name = "textBox_cert_value";
             this.textBox_cert_value.Size = new System.Drawing.Size(107, 25);
             this.textBox_cert_value.TabIndex = 13;
@@ -104,7 +104,7 @@ namespace LibraryManagementSystem
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(796, 478);
+            this.label6.Location = new System.Drawing.Point(706, 480);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 16;
@@ -114,7 +114,7 @@ namespace LibraryManagementSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(796, 419);
+            this.label7.Location = new System.Drawing.Point(706, 421);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 20);
             this.label7.TabIndex = 17;
@@ -122,7 +122,7 @@ namespace LibraryManagementSystem
             // 
             // textBox_name
             // 
-            this.textBox_name.Location = new System.Drawing.Point(971, 414);
+            this.textBox_name.Location = new System.Drawing.Point(881, 416);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(107, 25);
             this.textBox_name.TabIndex = 18;
@@ -130,14 +130,14 @@ namespace LibraryManagementSystem
             // 
             // textBox_dept
             // 
-            this.textBox_dept.Location = new System.Drawing.Point(971, 473);
+            this.textBox_dept.Location = new System.Drawing.Point(881, 475);
             this.textBox_dept.Name = "textBox_dept";
             this.textBox_dept.Size = new System.Drawing.Size(107, 25);
             this.textBox_dept.TabIndex = 19;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(864, 557);
+            this.button1.Location = new System.Drawing.Point(774, 559);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 46);
             this.button1.TabIndex = 20;
@@ -149,7 +149,7 @@ namespace LibraryManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(796, 216);
+            this.label3.Location = new System.Drawing.Point(706, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 21;
@@ -161,7 +161,7 @@ namespace LibraryManagementSystem
             this.comboBox_type.Items.AddRange(new object[] {
             "教师",
             "学生"});
-            this.comboBox_type.Location = new System.Drawing.Point(971, 213);
+            this.comboBox_type.Location = new System.Drawing.Point(881, 215);
             this.comboBox_type.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comboBox_type.Name = "comboBox_type";
             this.comboBox_type.Size = new System.Drawing.Size(107, 23);

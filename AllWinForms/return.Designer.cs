@@ -36,7 +36,7 @@ namespace LibraryManagementSystem.AllWinForms
             // 
             // button_return
             // 
-            this.button_return.Location = new System.Drawing.Point(626, 440);
+            this.button_return.Location = new System.Drawing.Point(830, 383);
             this.button_return.Name = "button_return";
             this.button_return.Size = new System.Drawing.Size(114, 52);
             this.button_return.TabIndex = 17;
@@ -46,7 +46,7 @@ namespace LibraryManagementSystem.AllWinForms
             // 
             // textBox_book_id
             // 
-            this.textBox_book_id.Location = new System.Drawing.Point(713, 306);
+            this.textBox_book_id.Location = new System.Drawing.Point(917, 249);
             this.textBox_book_id.Name = "textBox_book_id";
             this.textBox_book_id.Size = new System.Drawing.Size(165, 25);
             this.textBox_book_id.TabIndex = 19;
@@ -55,7 +55,7 @@ namespace LibraryManagementSystem.AllWinForms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(542, 311);
+            this.label4.Location = new System.Drawing.Point(746, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 18;
@@ -65,7 +65,7 @@ namespace LibraryManagementSystem.AllWinForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 750);
+            this.ClientSize = new System.Drawing.Size(1724, 706);
             this.Controls.Add(this.textBox_book_id);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button_return);

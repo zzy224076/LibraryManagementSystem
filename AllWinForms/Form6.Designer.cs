@@ -45,7 +45,7 @@ namespace LibraryManagementSystem
             // 
             this.panel1.Controls.Add(this.radioButton_xue_id);
             this.panel1.Controls.Add(this.radioButton_cert_id);
-            this.panel1.Location = new System.Drawing.Point(1085, 199);
+            this.panel1.Location = new System.Drawing.Point(724, 185);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(254, 92);
             this.panel1.TabIndex = 0;
@@ -74,14 +74,14 @@ namespace LibraryManagementSystem
             // 
             // textBox_guaID
             // 
-            this.textBox_guaID.Location = new System.Drawing.Point(1208, 296);
+            this.textBox_guaID.Location = new System.Drawing.Point(847, 282);
             this.textBox_guaID.Name = "textBox_guaID";
             this.textBox_guaID.Size = new System.Drawing.Size(131, 25);
             this.textBox_guaID.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1014, 495);
+            this.button1.Location = new System.Drawing.Point(653, 481);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 46);
             this.button1.TabIndex = 2;
@@ -93,7 +93,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(1085, 306);
+            this.label1.Location = new System.Drawing.Point(724, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 3;
@@ -103,7 +103,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(1085, 368);
+            this.label2.Location = new System.Drawing.Point(724, 354);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 4;
@@ -111,14 +111,14 @@ namespace LibraryManagementSystem
             // 
             // textBox2_name
             // 
-            this.textBox2_name.Location = new System.Drawing.Point(1208, 363);
+            this.textBox2_name.Location = new System.Drawing.Point(847, 349);
             this.textBox2_name.Name = "textBox2_name";
             this.textBox2_name.Size = new System.Drawing.Size(131, 25);
             this.textBox2_name.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1242, 495);
+            this.button2.Location = new System.Drawing.Point(881, 481);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 46);
             this.button2.TabIndex = 6;
@@ -130,7 +130,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1740, 755);
+            this.ClientSize = new System.Drawing.Size(1724, 706);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2_name);
             this.Controls.Add(this.label2);

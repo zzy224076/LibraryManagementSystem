@@ -61,6 +61,7 @@ namespace LibraryManagementSystem
                 if (loanNum < loanNum_tea)
                 {
                     sqlClass.ExecuteLoan(cert_id, book_id);
+                    sqlClass.timejia(book_id);
                     MessageBox.Show("借书成功!");
                 }
                 else
