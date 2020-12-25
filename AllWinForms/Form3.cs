@@ -42,13 +42,11 @@ namespace LibraryManagementSystem
             string url = textBox_picUrl.Text;
             string readingSummary = textBox_readingSummary.Text;
             SqlClass sqlClass = new SqlClass();
-          
-                if (sqlClass.IsNull(sqlClass.QueryById(bookId))){
-                    
-                    string sql = "insert into BookInfo  values('" + bookId+ "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'"+readingSummary+"','"+url+"')";
-                    
-                    sqlClass.NonQuery(sql);
-                    
+
+            if (sqlClass.IsNull(sqlClass.QueryById(bookId))){
+                string sql = "insert into BookInfo  values('" + bookId+ "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'"+readingSummary+"','"+url+"')";
+                sqlClass.NonQuery(sql);
+                MessageBox.Show("录入成功！！！");
                     
                 }
                 else

@@ -42,11 +42,14 @@ namespace LibraryManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label_book_name = new System.Windows.Forms.Label();
             this.pictureBox_book_pic = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox_query_bookName = new System.Windows.Forms.TextBox();
+            this.textBox_query = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton_id = new System.Windows.Forms.RadioButton();
+            this.radioButton_name = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book_pic)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -192,26 +195,16 @@ namespace LibraryManagementSystem
             this.pictureBox_book_pic.TabStop = false;
             this.pictureBox_book_pic.Click += new System.EventHandler(this.pictureBox_book_pic_Click);
             // 
-            // label1
+            // textBox_query
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(488, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "请输入图书名称";
-            // 
-            // textBox_query_bookName
-            // 
-            this.textBox_query_bookName.Location = new System.Drawing.Point(784, 60);
-            this.textBox_query_bookName.Name = "textBox_query_bookName";
-            this.textBox_query_bookName.Size = new System.Drawing.Size(208, 25);
-            this.textBox_query_bookName.TabIndex = 2;
+            this.textBox_query.Location = new System.Drawing.Point(784, 60);
+            this.textBox_query.Name = "textBox_query";
+            this.textBox_query.Size = new System.Drawing.Size(208, 25);
+            this.textBox_query.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1118, 51);
+            this.button1.Location = new System.Drawing.Point(1046, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 34);
             this.button1.TabIndex = 3;
@@ -219,20 +212,57 @@ namespace LibraryManagementSystem
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioButton_name);
+            this.panel1.Controls.Add(this.radioButton_id);
+            this.panel1.Location = new System.Drawing.Point(493, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(269, 55);
+            this.panel1.TabIndex = 4;
+            // 
+            // radioButton_id
+            // 
+            this.radioButton_id.AutoSize = true;
+            this.radioButton_id.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton_id.Location = new System.Drawing.Point(32, 18);
+            this.radioButton_id.Name = "radioButton_id";
+            this.radioButton_id.Size = new System.Drawing.Size(70, 24);
+            this.radioButton_id.TabIndex = 0;
+            this.radioButton_id.TabStop = true;
+            this.radioButton_id.Text = "按id";
+            this.radioButton_id.UseVisualStyleBackColor = true;
+            this.radioButton_id.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton_name
+            // 
+            this.radioButton_name.AutoSize = true;
+            this.radioButton_name.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.radioButton_name.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton_name.Location = new System.Drawing.Point(127, 18);
+            this.radioButton_name.Name = "radioButton_name";
+            this.radioButton_name.Size = new System.Drawing.Size(90, 24);
+            this.radioButton_name.TabIndex = 1;
+            this.radioButton_name.TabStop = true;
+            this.radioButton_name.Text = "按名称";
+            this.radioButton_name.UseVisualStyleBackColor = false;
+            // 
             // Query
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1724, 706);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox_query_bookName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox_query);
             this.Controls.Add(this.groupBox1);
             this.Name = "Query";
             this.Load += new System.EventHandler(this.Query_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book_pic)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,8 +271,7 @@ namespace LibraryManagementSystem
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_query_bookName;
+        private System.Windows.Forms.TextBox textBox_query;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox_book_pic;
         private System.Windows.Forms.Label label_book_name;
@@ -257,5 +286,8 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox_jianjie;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton_name;
+        private System.Windows.Forms.RadioButton radioButton_id;
     }
 }
