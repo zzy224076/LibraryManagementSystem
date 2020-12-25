@@ -38,10 +38,10 @@ namespace LibraryManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox_name = new System.Windows.Forms.TextBox();
-            this.textBox_dept = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox_type = new System.Windows.Forms.ComboBox();
+            this.comboBox_depart = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox_cert_ID
@@ -128,13 +128,6 @@ namespace LibraryManagementSystem
             this.textBox_name.TabIndex = 18;
             this.textBox_name.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox_dept
-            // 
-            this.textBox_dept.Location = new System.Drawing.Point(881, 475);
-            this.textBox_dept.Name = "textBox_dept";
-            this.textBox_dept.Size = new System.Drawing.Size(107, 25);
-            this.textBox_dept.TabIndex = 19;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(774, 559);
@@ -167,15 +160,37 @@ namespace LibraryManagementSystem
             this.comboBox_type.Size = new System.Drawing.Size(107, 23);
             this.comboBox_type.TabIndex = 22;
             // 
+            // comboBox_depart
+            // 
+            this.comboBox_depart.FormattingEnabled = true;
+            this.comboBox_depart.Items.AddRange(new object[] {
+            "管理学院",
+            "经济学院",
+            "商学院",
+            "会计学院",
+            "艺术设计学院",
+            "传媒学院",
+            "外国语学院",
+            "智慧制造学院",
+            "计算机与人工智能学院",
+            "土木建筑学院",
+            "马克思主义学院",
+            "公共教学部"});
+            this.comboBox_depart.Location = new System.Drawing.Point(881, 480);
+            this.comboBox_depart.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.comboBox_depart.Name = "comboBox_depart";
+            this.comboBox_depart.Size = new System.Drawing.Size(107, 23);
+            this.comboBox_depart.TabIndex = 23;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1724, 706);
+            this.Controls.Add(this.comboBox_depart);
             this.Controls.Add(this.comboBox_type);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox_dept);
             this.Controls.Add(this.textBox_name);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -204,9 +219,9 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox_name;
-        private System.Windows.Forms.TextBox textBox_dept;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox_type;
+        private System.Windows.Forms.ComboBox comboBox_depart;
     }
 }

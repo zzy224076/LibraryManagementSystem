@@ -38,8 +38,6 @@ namespace LibraryManagementSystem
             this.textBox_author = new System.Windows.Forms.TextBox();
             this.textBox_Title = new System.Windows.Forms.TextBox();
             this.dateTimePicker_publish = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown_Number = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_words = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +46,6 @@ namespace LibraryManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_readingSummary = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_words)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,24 +129,6 @@ namespace LibraryManagementSystem
             this.dateTimePicker_publish.Size = new System.Drawing.Size(200, 25);
             this.dateTimePicker_publish.TabIndex = 21;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(716, 380);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 20);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "印刷册数";
-            // 
-            // numericUpDown_Number
-            // 
-            this.numericUpDown_Number.Location = new System.Drawing.Point(851, 370);
-            this.numericUpDown_Number.Name = "numericUpDown_Number";
-            this.numericUpDown_Number.Size = new System.Drawing.Size(120, 25);
-            this.numericUpDown_Number.TabIndex = 39;
-            this.numericUpDown_Number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // numericUpDown_words
             // 
             this.numericUpDown_words.Location = new System.Drawing.Point(851, 321);
@@ -173,7 +152,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(716, 428);
+            this.label1.Location = new System.Drawing.Point(716, 396);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 42;
@@ -181,14 +160,14 @@ namespace LibraryManagementSystem
             // 
             // textBox_price
             // 
-            this.textBox_price.Location = new System.Drawing.Point(851, 418);
+            this.textBox_price.Location = new System.Drawing.Point(851, 396);
             this.textBox_price.Name = "textBox_price";
             this.textBox_price.Size = new System.Drawing.Size(100, 25);
             this.textBox_price.TabIndex = 43;
             // 
             // textBox_picUrl
             // 
-            this.textBox_picUrl.Location = new System.Drawing.Point(851, 472);
+            this.textBox_picUrl.Location = new System.Drawing.Point(851, 449);
             this.textBox_picUrl.Name = "textBox_picUrl";
             this.textBox_picUrl.Size = new System.Drawing.Size(100, 25);
             this.textBox_picUrl.TabIndex = 45;
@@ -197,7 +176,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(716, 482);
+            this.label2.Location = new System.Drawing.Point(716, 454);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 44;
@@ -205,7 +184,7 @@ namespace LibraryManagementSystem
             // 
             // textBox_readingSummary
             // 
-            this.textBox_readingSummary.Location = new System.Drawing.Point(851, 530);
+            this.textBox_readingSummary.Location = new System.Drawing.Point(851, 510);
             this.textBox_readingSummary.Name = "textBox_readingSummary";
             this.textBox_readingSummary.Size = new System.Drawing.Size(100, 25);
             this.textBox_readingSummary.TabIndex = 47;
@@ -214,7 +193,7 @@ namespace LibraryManagementSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(716, 540);
+            this.label7.Location = new System.Drawing.Point(716, 515);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 20);
             this.label7.TabIndex = 46;
@@ -233,8 +212,6 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.numericUpDown_words);
-            this.Controls.Add(this.numericUpDown_Number);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.dateTimePicker_publish);
             this.Controls.Add(this.textBox_Title);
             this.Controls.Add(this.textBox_author);
@@ -247,7 +224,6 @@ namespace LibraryManagementSystem
             this.Name = "Form_addBooks";
             this.Text = "录入图书";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Number)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_words)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -265,8 +241,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TextBox textBox_author;
         private System.Windows.Forms.TextBox textBox_Title;
         private System.Windows.Forms.DateTimePicker dateTimePicker_publish;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown numericUpDown_Number;
         private System.Windows.Forms.NumericUpDown numericUpDown_words;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;

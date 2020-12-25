@@ -34,7 +34,7 @@ namespace LibraryManagementSystem
             string cert_type = comboBox_type.Text;
             string cert_value = textBox_cert_value.Text;
             string name = textBox_name.Text;
-            string depart = textBox_dept.Text;
+            string depart = comboBox_depart.Text;
             string sql = "insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,3,'学生')";
             SqlClass sqlClass = new SqlClass();
            

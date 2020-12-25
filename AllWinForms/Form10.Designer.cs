@@ -46,7 +46,7 @@ namespace LibraryManagementSystem
             // 
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(150, 175);
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(298, 20);
+            this.toolStripContainer1.Location = new System.Drawing.Point(848, 243);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
             this.toolStripContainer1.Size = new System.Drawing.Size(150, 175);

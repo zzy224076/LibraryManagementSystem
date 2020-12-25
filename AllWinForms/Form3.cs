@@ -37,16 +37,15 @@ namespace LibraryManagementSystem
             string author= textBox_author.Text;
             int words = (int)numericUpDown_words.Value;
             
-            int number = (int)numericUpDown_Number.Value;
+            
             string price = textBox_price.Text;
             string url = textBox_picUrl.Text;
             string readingSummary = textBox_readingSummary.Text;
             SqlClass sqlClass = new SqlClass();
-            for (int i = 0; i< number; i++)
-            {
-                if (sqlClass.IsNull(sqlClass.QueryById(bookId+i))){
+          
+                if (sqlClass.IsNull(sqlClass.QueryById(bookId))){
                     
-                    string sql = "insert into BookInfo  values('" + bookId + "" + i + "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'"+readingSummary+"','"+url+"')";
+                    string sql = "insert into BookInfo  values('" + bookId+ "','" + title + "','" + publish + "','"+author+"',"+words+",'"+price+"',0,'"+readingSummary+"','"+url+"')";
                     
                     sqlClass.NonQuery(sql);
                     
@@ -55,12 +54,9 @@ namespace LibraryManagementSystem
                 else
                 {
                     MessageBox.Show("id已存在，请重新输入！");
-                    break;
+                    
                 }
-                MessageBox.Show("插入成功！");
-            }
-                
-           
+          
             
             
         }

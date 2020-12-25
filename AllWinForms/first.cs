@@ -19,7 +19,7 @@ namespace LibraryManagementSystem
         public Form1()
         {
             InitializeComponent();
-            skinEngine1.SkinFile = System.Environment.CurrentDirectory + "\\Skins\\CalmnessColor1.ssk";
+            skinEngine1.SkinFile = System.Environment.CurrentDirectory + "\\Skins\\DeepGreen.ssk";
             this.WindowState = FormWindowState.Maximized;
         }
         private void OpenFrom(Form objFrm)

@@ -17,16 +17,13 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
-        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Form10_Load(object sender, EventArgs e)
         {
             this.dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             SqlClass sqlClass = new SqlClass();
-            DataSet ds=  sqlClass.Query("select Title from BookInfo");
+            DataSet ds=  sqlClass.Query("select Title from BookInfo group by title");
             dataGridView2.Rows.Clear();
             foreach (DataRow mDr in ds.Tables[0].Rows)
             {
