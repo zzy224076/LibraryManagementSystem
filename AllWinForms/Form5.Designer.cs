@@ -60,6 +60,7 @@ namespace LibraryManagementSystem
             this.label1.Size = new System.Drawing.Size(109, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "借书证书ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -186,7 +187,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1724, 706);
+            this.ClientSize = new System.Drawing.Size(1724, 846);
             this.Controls.Add(this.comboBox_depart);
             this.Controls.Add(this.comboBox_type);
             this.Controls.Add(this.label3);

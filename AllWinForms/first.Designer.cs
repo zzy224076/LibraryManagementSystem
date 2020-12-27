@@ -53,7 +53,6 @@ namespace LibraryManagementSystem
             this.热门书统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书浏览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.阅读摘要ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.新书浏览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -213,21 +212,21 @@ namespace LibraryManagementSystem
             // 办理借阅证ToolStripMenuItem
             // 
             this.办理借阅证ToolStripMenuItem.Name = "办理借阅证ToolStripMenuItem";
-            this.办理借阅证ToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.办理借阅证ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.办理借阅证ToolStripMenuItem.Text = "办理借阅证";
             this.办理借阅证ToolStripMenuItem.Click += new System.EventHandler(this.办理借阅证ToolStripMenuItem_Click);
             // 
             // 挂失借阅证ToolStripMenuItem
             // 
             this.挂失借阅证ToolStripMenuItem.Name = "挂失借阅证ToolStripMenuItem";
-            this.挂失借阅证ToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.挂失借阅证ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.挂失借阅证ToolStripMenuItem.Text = "挂失&补办借阅证";
             this.挂失借阅证ToolStripMenuItem.Click += new System.EventHandler(this.挂失借阅证ToolStripMenuItem_Click);
             // 
             // 注销借阅证ToolStripMenuItem
             // 
             this.注销借阅证ToolStripMenuItem.Name = "注销借阅证ToolStripMenuItem";
-            this.注销借阅证ToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.注销借阅证ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.注销借阅证ToolStripMenuItem.Text = "注销借阅证";
             this.注销借阅证ToolStripMenuItem.Click += new System.EventHandler(this.注销借阅证ToolStripMenuItem_Click);
             // 
@@ -243,14 +242,14 @@ namespace LibraryManagementSystem
             // 借书ToolStripMenuItem
             // 
             this.借书ToolStripMenuItem.Name = "借书ToolStripMenuItem";
-            this.借书ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.借书ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.借书ToolStripMenuItem.Text = "借书";
             this.借书ToolStripMenuItem.Click += new System.EventHandler(this.借书ToolStripMenuItem_Click);
             // 
             // 还书ToolStripMenuItem
             // 
             this.还书ToolStripMenuItem.Name = "还书ToolStripMenuItem";
-            this.还书ToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.还书ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.还书ToolStripMenuItem.Text = "还书";
             this.还书ToolStripMenuItem.Click += new System.EventHandler(this.还书ToolStripMenuItem_Click);
             // 
@@ -265,15 +264,14 @@ namespace LibraryManagementSystem
             // 热门书统计ToolStripMenuItem
             // 
             this.热门书统计ToolStripMenuItem.Name = "热门书统计ToolStripMenuItem";
-            this.热门书统计ToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.热门书统计ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.热门书统计ToolStripMenuItem.Text = "热门书统计";
             this.热门书统计ToolStripMenuItem.Click += new System.EventHandler(this.热门书统计ToolStripMenuItem_Click);
             // 
             // 图书浏览ToolStripMenuItem
             // 
             this.图书浏览ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.阅读摘要ToolStripMenuItem,
-            this.新书浏览ToolStripMenuItem});
+            this.阅读摘要ToolStripMenuItem});
             this.图书浏览ToolStripMenuItem.Name = "图书浏览ToolStripMenuItem";
             this.图书浏览ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.图书浏览ToolStripMenuItem.Text = "图书浏览";
@@ -281,15 +279,9 @@ namespace LibraryManagementSystem
             // 阅读摘要ToolStripMenuItem
             // 
             this.阅读摘要ToolStripMenuItem.Name = "阅读摘要ToolStripMenuItem";
-            this.阅读摘要ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.阅读摘要ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.阅读摘要ToolStripMenuItem.Text = "阅读摘要";
             this.阅读摘要ToolStripMenuItem.Click += new System.EventHandler(this.阅读摘要ToolStripMenuItem_Click);
-            // 
-            // 新书浏览ToolStripMenuItem
-            // 
-            this.新书浏览ToolStripMenuItem.Name = "新书浏览ToolStripMenuItem";
-            this.新书浏览ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.新书浏览ToolStripMenuItem.Text = "新书浏览";
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -358,7 +350,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 热门书统计ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图书浏览ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 阅读摘要ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 新书浏览ToolStripMenuItem;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;
         private System.Windows.Forms.ToolStripMenuItem 系统设置ToolStripMenuItem;
         private System.Windows.Forms.Label label3;

@@ -23,20 +23,22 @@ namespace LibraryManagementSystem.AllWinForms
             string bookId = textBox_book_id.Text;
             SqlClass sqlClass = new SqlClass();
             //获取借该图书的借阅证类型
-            DataSet ds = sqlClass.Query("SELECT type from loan,CertificateInfo where Loan.Cert_id = CertificateInfo.Cert_id and Loan.BookID="+bookId);
+            DataSet ds = sqlClass.Query("SELECT type from loan,CertificateInfo where Loan.Cert_id = CertificateInfo.Cert_id and Loan.BookID="+bookId+"and Loan.flag=0");
             String type=(string) ds.Tables[0].Rows[0][0];
+            
             if (type=="教师")
             {
                 DataSet dataSet = sqlClass.Query("select maxDate_tea from settings");
                 int maxDate_tea= (int) dataSet.Tables[0].Rows[0][0];
-                DataSet dataSet1= sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + bookId);
+                DataSet dataSet1= sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + bookId+"and flag =0");
                 int loanDays = (int)dataSet1.Tables[0].Rows[0][0];
-                
                 int date = maxDate_tea - loanDays;
+                
                 if (date>=0)
                 {
                     sqlClass.ExecuteReturn( bookId);
                     MessageBox.Show("归还成功！！！");
+                    this.Form_return_Load(null, null);
                 }
                 else
                 {
@@ -45,6 +47,7 @@ namespace LibraryManagementSystem.AllWinForms
                     {
                         sqlClass.ExecuteReturn(bookId);
                         MessageBox.Show("归还成功！！！");
+                        this.Form_return_Load(null, null);
                     }
 
                 }
@@ -52,7 +55,7 @@ namespace LibraryManagementSystem.AllWinForms
             {
                 DataSet dataSet = sqlClass.Query("select maxDate_stu from settings");
                 int maxDate_tea = (int)dataSet.Tables[0].Rows[0][0];
-                DataSet dataSet1 = sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + bookId);
+                DataSet dataSet1 = sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + bookId+"and flag=0");
                 int loanDays = (int)dataSet1.Tables[0].Rows[0][0];
                 
                 int date = maxDate_tea - loanDays;
@@ -60,6 +63,7 @@ namespace LibraryManagementSystem.AllWinForms
                 {
                     sqlClass.ExecuteReturn(bookId);
                     MessageBox.Show("归还成功！！！");
+                    this.Form_return_Load(null, null);
                 }
                 else
                 {
@@ -68,11 +72,65 @@ namespace LibraryManagementSystem.AllWinForms
                     {
                         sqlClass.ExecuteReturn(bookId);
                         MessageBox.Show("归还成功！！！");
+                        this.Form_return_Load(null, null);
                     }
 
                 }
             }
            
+        }
+
+        private void Form_return_Load(object sender, EventArgs e)
+        {
+            SqlClass sqlClass = new SqlClass();
+            DataSet ds =sqlClass.Query("select * from Loan where flag=0");
+            dataGridView1.Rows.Clear();
+            foreach (DataRow mDr in ds.Tables[0].Rows)
+            {
+                
+                //获取该借阅证的类型
+                DataSet ds1 = sqlClass.Query("SELECT type from loan,CertificateInfo where Loan.Cert_id = CertificateInfo.Cert_id and Loan.BookID=" + mDr[0] + "and Loan.flag=0");
+                String type = (string)ds1.Tables[0].Rows[0][0];
+                if (type == "教师")
+                {
+                    DataSet dataSet = sqlClass.Query("select maxDate_tea from settings");
+                    int maxDate_tea = (int)dataSet.Tables[0].Rows[0][0];
+                    DataSet dataSet1 = sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + mDr[0] + "and flag=0");
+                    int loanDays = (int)dataSet1.Tables[0].Rows[0][0];
+
+                    int date = maxDate_tea - loanDays;
+                    if (date >= 0)
+                    {
+                        dataGridView1.Rows.Add(mDr[0], mDr[1], mDr[2],"否");
+
+
+                    }
+                    else
+                    {
+                        dataGridView1.Rows.Add(mDr[0], mDr[1], mDr[2], "是",-date);
+
+                    }
+                }
+                else if (type == "学生")
+                {
+                    DataSet dataSet = sqlClass.Query("select maxDate_stu from settings");
+                    int maxDate_tea = (int)dataSet.Tables[0].Rows[0][0];
+                    DataSet dataSet1 = sqlClass.Query("SELECT DATEDIFF(DAY, Loandates, GETDATE()) from Loan WHERE BookID =" + mDr[0] + "and flag=0");
+                    int loanDays = (int)dataSet1.Tables[0].Rows[0][0];
+
+                    int date = maxDate_tea - loanDays;
+                    if (date >= 0)
+                    {
+                        dataGridView1.Rows.Add(mDr[0], mDr[1], mDr[2], "否");
+                    }
+                    else
+                    {
+                        dataGridView1.Rows.Add(mDr[0], mDr[1], mDr[2], "是",-date);
+
+                    }
+                }
+
+            }
         }
     }
 }

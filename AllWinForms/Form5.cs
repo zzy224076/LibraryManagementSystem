@@ -46,16 +46,16 @@ namespace LibraryManagementSystem
             else
             {
                 
-                if (name!=""&& cert_name!="" && cert_value != "")
+                if (name!=""&& cert_name!="" && cert_value != ""&&cert_type!="")
                 {
                     if (cert_type == "教师")
                     {
-                        sqlClass.NonQuery("insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,5,'教师')");
+                        sqlClass.NonQuery("insert into CertificateInfo values(" + cert_id + ",'" + cert_name + "','" + cert_value + "','" + name + "','" + depart + "',0,'教师')");
                         MessageBox.Show("办理成功！");
                     }
                     else
                     {
-                        MessageBox.Show(sql);
+                        
                     sqlClass.NonQuery(sql);
                     MessageBox.Show("办理成功！");
                 }
@@ -73,6 +73,11 @@ namespace LibraryManagementSystem
         private void Form5_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

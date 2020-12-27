@@ -66,7 +66,7 @@ namespace LibraryManagementSystem
                 }
                 else
                 {
-                    MessageBox.Show("该用户借书本书不足，借书失败！");
+                    MessageBox.Show("该用户可借本数不足，借书失败！");
                 }
             }
             else
@@ -83,7 +83,7 @@ namespace LibraryManagementSystem
                 }
                 else
                 {
-                    MessageBox.Show("该用户借书本书不足，借书失败！");
+                    MessageBox.Show("该用户可借本数不足，借书失败！");
                 }
             }
 
