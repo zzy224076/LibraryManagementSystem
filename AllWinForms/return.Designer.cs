@@ -75,9 +75,9 @@ namespace LibraryManagementSystem.AllWinForms
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(613, 404);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 20);
+            this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 20;
-            this.label1.Text = "未归还图书列表";
+            this.label1.Text = "未归还图书：";
             // 
             // dataGridView1
             // 
