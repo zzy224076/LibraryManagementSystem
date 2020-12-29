@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class Form7
+    partial class Cancellation
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@ namespace LibraryManagementSystem
             this.textBox_guaID.Size = new System.Drawing.Size(131, 25);
             this.textBox_guaID.TabIndex = 8;
             // 
-            // Form7
+            // Cancellation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,8 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_guaID);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.Name = "Cancellation";
+            this.Text = "注销";
             this.ResumeLayout(false);
             this.PerformLayout();
 

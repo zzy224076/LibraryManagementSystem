@@ -45,8 +45,8 @@ namespace LibraryManagementSystem
             this.textBox_query = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton_id = new System.Windows.Forms.RadioButton();
             this.radioButton_name = new System.Windows.Forms.RadioButton();
+            this.radioButton_id = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book_pic)).BeginInit();
             this.panel1.SuspendLayout();
@@ -182,9 +182,9 @@ namespace LibraryManagementSystem
             this.label_book_name.Font = new System.Drawing.Font("华文中宋", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label_book_name.Location = new System.Drawing.Point(23, 31);
             this.label_book_name.Name = "label_book_name";
-            this.label_book_name.Size = new System.Drawing.Size(194, 49);
+            this.label_book_name.Size = new System.Drawing.Size(102, 49);
             this.label_book_name.TabIndex = 1;
-            this.label_book_name.Text = "人间失格";
+            this.label_book_name.Text = "title";
             // 
             // pictureBox_book_pic
             // 
@@ -221,19 +221,6 @@ namespace LibraryManagementSystem
             this.panel1.Size = new System.Drawing.Size(269, 55);
             this.panel1.TabIndex = 4;
             // 
-            // radioButton_id
-            // 
-            this.radioButton_id.AutoSize = true;
-            this.radioButton_id.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton_id.Location = new System.Drawing.Point(32, 18);
-            this.radioButton_id.Name = "radioButton_id";
-            this.radioButton_id.Size = new System.Drawing.Size(70, 24);
-            this.radioButton_id.TabIndex = 0;
-            this.radioButton_id.TabStop = true;
-            this.radioButton_id.Text = "按id";
-            this.radioButton_id.UseVisualStyleBackColor = true;
-            this.radioButton_id.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
             // radioButton_name
             // 
             this.radioButton_name.AutoSize = true;
@@ -246,6 +233,19 @@ namespace LibraryManagementSystem
             this.radioButton_name.TabStop = true;
             this.radioButton_name.Text = "按名称";
             this.radioButton_name.UseVisualStyleBackColor = false;
+            // 
+            // radioButton_id
+            // 
+            this.radioButton_id.AutoSize = true;
+            this.radioButton_id.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton_id.Location = new System.Drawing.Point(32, 18);
+            this.radioButton_id.Name = "radioButton_id";
+            this.radioButton_id.Size = new System.Drawing.Size(70, 24);
+            this.radioButton_id.TabIndex = 0;
+            this.radioButton_id.TabStop = true;
+            this.radioButton_id.Text = "按id";
+            this.radioButton_id.UseVisualStyleBackColor = true;
+            this.radioButton_id.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // Query
             // 

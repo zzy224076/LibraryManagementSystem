@@ -66,6 +66,7 @@ namespace LibraryManagementSystem
             this.textBox_Book_ID.Name = "textBox_Book_ID";
             this.textBox_Book_ID.Size = new System.Drawing.Size(100, 25);
             this.textBox_Book_ID.TabIndex = 1;
+            this.textBox_Book_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Book_ID_KeyPress);
             // 
             // label3
             // 
@@ -164,6 +165,7 @@ namespace LibraryManagementSystem
             this.textBox_price.Name = "textBox_price";
             this.textBox_price.Size = new System.Drawing.Size(100, 25);
             this.textBox_price.TabIndex = 43;
+            this.textBox_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_price_KeyPress);
             // 
             // textBox_picUrl
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form7 : Form
+    public partial class Cancellation : Form
     {
-        public Form7()
+        public Cancellation()
         {
             InitializeComponent();
         }

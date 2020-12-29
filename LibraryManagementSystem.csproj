@@ -67,59 +67,59 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\first.cs">
+    <Compile Include="AllWinForms\home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\first.Designer.cs">
-      <DependentUpon>first.cs</DependentUpon>
+    <Compile Include="AllWinForms\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form10.cs">
+    <Compile Include="AllWinForms\Readsummary.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="AllWinForms\Readsummary.Designer.cs">
+      <DependentUpon>Readsummary.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form3.cs">
+    <Compile Include="AllWinForms\addBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="AllWinForms\addBooks.Designer.cs">
+      <DependentUpon>addBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form4.cs">
+    <Compile Include="AllWinForms\delBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="AllWinForms\delBook.Designer.cs">
+      <DependentUpon>delBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form5.cs">
+    <Compile Include="AllWinForms\addCert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="AllWinForms\addCert.Designer.cs">
+      <DependentUpon>addCert.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form6.cs">
+    <Compile Include="AllWinForms\guashi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="AllWinForms\guashi.Designer.cs">
+      <DependentUpon>guashi.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form7.cs">
+    <Compile Include="AllWinForms\Cancellation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="AllWinForms\Cancellation.Designer.cs">
+      <DependentUpon>Cancellation.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form8.cs">
+    <Compile Include="AllWinForms\loan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="AllWinForms\loan.Designer.cs">
+      <DependentUpon>loan.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllWinForms\Form9.cs">
+    <Compile Include="AllWinForms\ranking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AllWinForms\Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="AllWinForms\ranking.Designer.cs">
+      <DependentUpon>ranking.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,32 +137,32 @@
     </Compile>
     <Compile Include="util\SqlClass.cs" />
     <Compile Include="util\SqlDao.cs" />
-    <EmbeddedResource Include="AllWinForms\first.resx">
-      <DependentUpon>first.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\Readsummary.resx">
+      <DependentUpon>Readsummary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\addBooks.resx">
+      <DependentUpon>addBooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\delBook.resx">
+      <DependentUpon>delBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\addCert.resx">
+      <DependentUpon>addCert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\guashi.resx">
+      <DependentUpon>guashi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\Cancellation.resx">
+      <DependentUpon>Cancellation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\loan.resx">
+      <DependentUpon>loan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllWinForms\Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="AllWinForms\ranking.resx">
+      <DependentUpon>ranking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllWinForms\return.resx">
       <DependentUpon>return.cs</DependentUpon>

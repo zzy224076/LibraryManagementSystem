@@ -12,11 +12,11 @@ using System.Windows.Forms;
 namespace LibraryManagementSystem
 {
     
-    public partial class Form1 : Form
+    public partial class home : Form
     {
         
         
-        public Form1()
+        public home()
         {
             InitializeComponent();
             skinEngine1.SkinFile = System.Environment.CurrentDirectory + "\\Skins\\DeepGreen.ssk";
@@ -179,7 +179,7 @@ namespace LibraryManagementSystem
         private void 注销借阅证ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-                Form7 form7 = new Form7();
+                Cancellation form7 = new Cancellation();
                 this.OpenFrom(form7);
                 groupBox_son.Show();
            
@@ -188,7 +188,7 @@ namespace LibraryManagementSystem
         private void 借书ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
-                Form8 form8 = new Form8();
+                loan form8 = new loan();
                 this.OpenFrom(form8);
                 groupBox_son.Show();
             
@@ -197,7 +197,7 @@ namespace LibraryManagementSystem
         private void 热门书统计ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
-                Form9 form9 = new Form9();
+                ranking form9 = new ranking();
                 this.OpenFrom(form9);
                 groupBox_son.Show();
           
@@ -206,7 +206,7 @@ namespace LibraryManagementSystem
         private void 阅读摘要ToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
-                Form10 form10 = new Form10();
+                Readsummary form10 = new Readsummary();
                 this.OpenFrom(form10);
                 groupBox_son.Show();
             

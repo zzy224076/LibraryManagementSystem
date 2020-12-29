@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class Form8
+    partial class loan
     {
         /// <summary>
         /// Required designer variable.
@@ -54,6 +54,7 @@ namespace LibraryManagementSystem
             this.textBox_cert_id.Size = new System.Drawing.Size(165, 25);
             this.textBox_cert_id.TabIndex = 1;
             this.textBox_cert_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox_cert_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_cert_id_KeyPress_1);
             // 
             // label2
             // 
@@ -83,6 +84,8 @@ namespace LibraryManagementSystem
             this.textBox_book_id.Name = "textBox_book_id";
             this.textBox_book_id.Size = new System.Drawing.Size(165, 25);
             this.textBox_book_id.TabIndex = 14;
+            this.textBox_book_id.TextChanged += new System.EventHandler(this.textBox_book_id_TextChanged);
+            this.textBox_book_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_book_id_KeyPress_1);
             // 
             // button1
             // 
@@ -94,7 +97,7 @@ namespace LibraryManagementSystem
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form8
+            // loan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,8 +108,8 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_cert_id);
             this.Controls.Add(this.label1);
-            this.Name = "Form8";
-            this.Text = "Form8";
+            this.Name = "loan";
+            this.Text = "借阅";
             this.Load += new System.EventHandler(this.Form8_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

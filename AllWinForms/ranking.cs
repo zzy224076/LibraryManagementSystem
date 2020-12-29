@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form9 : Form
+    public partial class ranking : Form
     {
-        public Form9()
+        public ranking()
         {
             InitializeComponent();
         }

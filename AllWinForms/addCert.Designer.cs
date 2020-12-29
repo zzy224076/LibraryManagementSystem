@@ -50,6 +50,8 @@ namespace LibraryManagementSystem
             this.textBox_cert_ID.Name = "textBox_cert_ID";
             this.textBox_cert_ID.Size = new System.Drawing.Size(100, 25);
             this.textBox_cert_ID.TabIndex = 1;
+            this.textBox_cert_ID.TextChanged += new System.EventHandler(this.textBox_cert_ID_TextChanged);
+            this.textBox_cert_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_cert_ID_KeyPress);
             // 
             // label1
             // 
@@ -100,6 +102,7 @@ namespace LibraryManagementSystem
             this.textBox_cert_value.Name = "textBox_cert_value";
             this.textBox_cert_value.Size = new System.Drawing.Size(107, 25);
             this.textBox_cert_value.TabIndex = 13;
+            this.textBox_cert_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_cert_value_KeyPress);
             // 
             // label6
             // 

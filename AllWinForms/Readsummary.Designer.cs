@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class Form10
+    partial class Readsummary
     {
         /// <summary>
         /// Required designer variable.
@@ -95,7 +95,7 @@ namespace LibraryManagementSystem
             this.label1.TabIndex = 5;
             this.label1.Text = "阅读摘要";
             // 
-            // Form10
+            // Readsummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,8 +104,8 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.toolStripContainer1);
-            this.Name = "Form10";
-            this.Text = "Form10";
+            this.Name = "Readsummary";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
